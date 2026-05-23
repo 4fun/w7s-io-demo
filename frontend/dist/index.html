@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>W7S Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <p class="eyebrow">W7S demo</p>
+        <h1>Frontend and backend from one repo.</h1>
+        <p class="lede">
+          This static frontend is served from <code>frontend/dist</code>. The buttons call
+          a native Worker backend from <code>backend/index.js</code>.
+        </p>
+        <div class="actions">
+          <button id="hello" type="button">Call /api/hello</button>
+          <button id="time" type="button">Call /api/time</button>
+        </div>
+      </section>
+      <pre id="output">Waiting for a backend call...</pre>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
+
